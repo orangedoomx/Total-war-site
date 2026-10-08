@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOTAL WAR® | Underground Streetwear</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            grunge: ['"Permanent Marker"', 'cursive'],
+            sans: ['"Space Grotesk"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#0a0a0a',
+              card: '#121212',
+              accent: '#d12f2f',
+              gray: '#242424',
+              lightGray: '#888888'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .grunge-text {
+      font-family: 'Permanent Marker', cursive;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #242424;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="bg-brand-black text-white antialiased custom-scrollbar min-h-screen flex flex-col justify-between">
+
+  <!-- TOP BANNER -->
+  <div class="bg-brand-accent text-black font-bold text-center text-xs tracking-widest py-2 uppercase">
+    Limited Drops • Free US Shipping Over $150 • No Restocks
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="border-b border-brand-gray sticky top-0 bg-brand-black/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-black tracking-tighter grunge-text flex items-center gap-2">
+        <span>TOTAL WAR</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wider text-neutral-300">
+        <a href="#shop" class="hover:text-brand-accent transition-colors">SHOP</a>
+        <a href="#about" class="hover:text-brand-accent transition-colors">BRAND ETHOS</a>
+        <a href="#lookbook" class="hover:text-brand-accent transition-colors">LOOKBOOK</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <button id="cartBtn" class="relative bg-brand-card hover:bg-brand-gray border border-brand-gray text-white px-4 py-2 rounded text-xs font-bold tracking-widest flex items-center gap-2 transition-all">
+          <span>CART</span>
+          <span id="cartCount" class="bg-brand-accent text-black font-extrabold rounded-full w-5 h-5 flex items-center justify-center text-[10px]">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-black border-b border-brand-gray py-20 px-4 text-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent z-10 opacity-80"></div>
+    <div class="relative z-20 max-w-4xl mx-auto space-y-6">
+      <span class="text-brand-accent text-xs font-bold tracking-[0.3em] uppercase bg-brand-accent/10 px-3 py-1 rounded border border-brand-accent/30">
+        New Drop 2026
+      </span>
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight grunge-text uppercase leading-none">
+        Discipline Builds Real Freedom
+      </h1>
+      <p class="text-neutral-400 text-sm md:text-base max-w-xl mx-auto font-light">
+        Heavyweight custom distressed garments, tactical aesthetics, and raw underground streetwear designed for those who move different.
+      </p>
+      <div class="pt-4 flex justify-center gap-4">
+        <a href="#shop" class="bg-white text-black hover:bg-neutral-200 px-8 py-3 rounded font-bold text-xs tracking-widest uppercase transition-all">
+          Shop Drop
+        </a>
+        <a href="#lookbook" class="border border-brand-gray hover:border-white px-8 py-3 rounded font-bold text-xs tracking-widest uppercase transition-all">
+          View Lookbook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section id="shop" class="max-w-7xl mx-auto px-4 py-16">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 border-b border-brand-gray pb-4 gap-4">
+      <div>
+        <h2 class="text-3xl font-black tracking-wider uppercase">LATEST DROP</h2>
+        <p class="text-neutral-400 text-xs mt-1">Limited quantities available. Once sold out, items will not be restocked.</p>
+      </div>
+      <div class="text-xs text-neutral-400">
+        Showing 4 Items
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- ITEM 1 -->
+      <div class="bg-brand-card border border-brand-gray rounded-lg overflow-hidden flex flex-col justify-between group">
+        <div class="aspect-square bg-neutral-900 relative overflow-hidden flex items-center justify-center">
+          <div class="text-neutral-600 font-bold text-sm tracking-widest">HOODIE IMAGE</div>
+          <span class="absolute top-3 left-3 bg-brand-accent text-black text-[10px] font-bold px-2 py-0.5 rounded uppercase">Heavyweight</span>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-bold text-sm tracking-wider uppercase group-hover:text-brand-accent transition-colors">Washed Grenade Zip Hoodie</h3>
+            <p class="text-neutral-400 text-xs mt-1">100% Cotton, 480GSM, Custom Distressed</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-brand-gray/50 flex justify-between items-center">
+            <span class="font-extrabold text-sm">$85.00</span>
+            <button onclick="addToCart('Washed Grenade Zip Hoodie', 85)" class="bg-white text-black hover:bg-neutral-200 px-3 py-1.5 rounded text-xs font-bold tracking-wider uppercase transition-all">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="bg-brand-card border border-brand-gray rounded-lg overflow-hidden flex flex-col justify-between group">
+        <div class="aspect-square bg-neutral-900 relative overflow-hidden flex items-center justify-center">
+          <div class="text-neutral-600 font-bold text-sm tracking-widest">CARGO DENIM IMAGE</div>
+          <span class="absolute top-3 left-3 bg-neutral-800 text-neutral-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Custom Cut</span>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-bold text-sm tracking-wider uppercase group-hover:text-brand-accent transition-colors">Distressed Cargo Denim</h3>
+            <p class="text-neutral-400 text-xs mt-1">Multi-pocket design, vintage wash denim</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-brand-gray/50 flex justify-between items-center">
+            <span class="font-extrabold text-sm">$110.00</span>
+            <button onclick="addToCart('Distressed Cargo Denim', 110)" class="bg-white text-black hover:bg-neutral-200 px-3 py-1.5 rounded text-xs font-bold tracking-wider uppercase transition-all">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="bg-brand-card border border-brand-gray rounded-lg overflow-hidden flex flex-col justify-between group">
+        <div class="aspect-square bg-neutral-900 relative overflow-hidden flex items-center justify-center">
+          <div class="text-neutral-600 font-bold text-sm tracking-widest">BEANIE IMAGE</div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-bold text-sm tracking-wider uppercase group-hover:text-brand-accent transition-colors">Barbed Wire Beanie</h3>
+            <p class="text-neutral-400 text-xs mt-1">Heavy knit, embroidered signature logo</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-brand-gray/50 flex justify-between items-center">
+            <span class="font-extrabold text-sm">$35.00</span>
+            <button onclick="addToCart('Barbed Wire Beanie', 35)" class="bg-white text-black hover:bg-neutral-200 px-3 py-1.5 rounded text-xs font-bold tracking-wider uppercase transition-all">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="bg-brand-card border border-brand-gray rounded-lg overflow-hidden flex flex-col justify-between group">
+        <div class="aspect-square bg-neutral-900 relative overflow-hidden flex items-center justify-center">
+          <div class="text-neutral-600 font-bold text-sm tracking-widest">TEE IMAGE</div>
+        </div>
+        <div class="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 class="font-bold text-sm tracking-wider uppercase group-hover:text-brand-accent transition-colors">Signature Heavyweight Tee</h3>
+            <p class="text-neutral-400 text-xs mt-1">Oversized boxy fit, screen printed graphics</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-brand-gray/50 flex justify-between items-center">
+            <span class="font-extrabold text-sm">$45.00</span>
+            <button onclick="addToCart('Signature Heavyweight Tee', 45)" class="bg-white text-black hover:bg-neutral-200 px-3 py-1.5 rounded text-xs font-bold tracking-wider uppercase transition-all">
+              + Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BRAND ETHOS -->
+  <section id="about" class="bg-brand-card border-y border-brand-gray py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <h2 class="text-3xl font-black tracking-widest uppercase grunge-text text-brand-accent">MORE THAN CLOTHING</h2>
+      <p class="text-neutral-300 text-sm md:text-base leading-relaxed">
+        TOTAL WAR was created for those who build their own path. Every piece is crafted with heavy materials, intentional distressing, and high-level attention to detail. Built to survive the streets and stand out from the noise.
+      </p>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div id="cartModal" class="fixed inset-0 bg-black/80 z-50 hidden flex justify-end">
+    <div class="bg-brand-card w-full max-w-md h-full border-l border-brand-gray p-6 flex flex-col justify-between">
+      <div>
+        <div class="flex justify-between items-center border-b border-brand-gray pb-4">
+          <h3 class="text-xl font-black uppercase">YOUR CART</h3>
+          <button onclick="toggleCart()" class="text-neutral-400 hover:text-white font-bold text-xl">&times;</button>
+        </div>
+        <div id="cartItems" class="py-4 space-y-4 max-h-[60vh] overflow-y-auto">
+          <p class="text-neutral-500 text-xs">Your cart is currently empty.</p>
+        </div>
+      </div>
+      
+      <div class="border-t border-brand-gray pt-4 space-y-4">
+        <div class="flex justify-between text-sm font-bold">
+          <span>SUBTOTAL</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <button class="w-full bg-brand-accent hover:bg-red-700 text-black font-extrabold py-3 rounded text-xs tracking-widest uppercase transition-all">
+          Checkout Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-brand-gray py-8 px-4 text-center text-xs text-neutral-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>© 2026 TOTAL WAR®. ALL RIGHTS RESERVED.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition-colors">INSTAGRAM</a>
+        <a href="#" class="hover:text-white transition-colors">SHIPPING POLICY</a>
+        <a href="#" class="hover:text-white transition-colors">CONTACT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let cart = [];
+
+    function toggleCart() {
+      const modal = document.getElementById('cartModal');
+      modal.classList.toggle('hidden');
+    }
+
+    document.getElementById('cartBtn').addEventListener('click', toggleCart);
+
+    function addToCart(title, price) {
+      cart.push({ title, price });
+      updateCartUI();
+      toggleCart();
+    }
+
+    function updateCartUI() {
+      const countEl = document.getElementById('cartCount');
+      const itemsContainer = document.getElementById('cartItems');
+      const subtotalEl = document.getElementById('cartSubtotal');
+
+      countEl.innerText = cart.length;
+
+      if (cart.length === 0) {
+        itemsContainer.innerHTML = '<p class="text-neutral-500 text-xs">Your cart is currently empty.</p>';
+        subtotalEl.innerText = '$0.00';
+        return;
+      }
+
+      let total = 0;
+      itemsContainer.innerHTML = cart.map((item, index) => {
+        total += item.price;
+        return `
+          <div class="flex justify-between items-center border-b border-brand-gray/40 pb-2 text-xs">
+            <div>
+              <p class="font-bold uppercase">${item.title}</p>
+              <p class="text-neutral-400">$${item.price.toFixed(2)}</p>
+            </div>
+            <button onclick="removeFromCart(${index})" class="text-red-500 font-bold hover:underline">Remove</button>
+          </div>
+        `;
+      }).join('');
+
+      subtotalEl.innerText = `$${total.toFixed(2)}`;
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+  </script>
+</body>
+</html>
